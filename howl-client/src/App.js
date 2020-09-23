@@ -23,7 +23,8 @@ import axios from "axios";
 
 const theme = createMuiTheme(themeObject);
 
-axios.defaults.baseURL = "https://howl-62fe0.cloudfunctions.net/api";
+axios.defaults.baseURL =
+  "https://us-central1-howl-62fe0.cloudfunctions.net/api";
 
 const token = localStorage.FBIdToken;
 if (token) {

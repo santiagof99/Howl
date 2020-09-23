@@ -16,7 +16,9 @@ class home extends Component {
   render() {
     const { howls, loading } = this.props.data;
     let recentHowlsMarkup = !loading ? (
-      howls.map((howl) => <Howl key={howl.howlId} howl={howl} />)
+      howls.map((howl) => {
+        return <Howl key={howl.howlId} howl={howl} />;
+      })
     ) : (
       <HowlSkeleton />
     );
